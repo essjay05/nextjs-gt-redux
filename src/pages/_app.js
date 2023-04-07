@@ -1,5 +1,9 @@
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
+// import { store } from "@/store"
+// import { Provider } from "react-redux"
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
+
+export default App
