@@ -1,23 +1,18 @@
 "use client"
 
-import Head from 'next/head'
 import Image from 'next/image'
 
 import Layout, { siteTitle } from '@/components/global/Layout'
 import Search from '@/components/Search'
-// import SearchResults from '@/components/SearchResults'
-// import SSRSearchResults from '@/components/SSRSearchResults'
 import utilStyles from '@/styles/utils.module.scss'
 import styles from '@/styles/Home.module.scss'
 
 import { getEventsData } from '@/lib/gametimeData'
 
 import { store } from "@/store"
-import { useDispatch, useSelector } from 'react-redux'
 import { setSearchResults } from '@/store/searchSlice'
 import Providers from '@/components/Provider'
 import Preloader from "@/components/Preloader"
-
 
 export default function Home({ resultsData }) {
   
@@ -35,8 +30,6 @@ export default function Home({ resultsData }) {
             alt="Gametime Logo"
             classname={styles.mainLogo}/>
           <Search />
-          {/* <SearchResults results={resultsData} /> */}
-          {/* <SSRSearchResults /> */}
         </Providers>
       </main>
     </Layout>
@@ -45,7 +38,6 @@ export default function Home({ resultsData }) {
 
 // Initial load of api data
 export async function getStaticProps() {
-  console.log
   const libProjectsEventData = await getEventsData()
   store.dispatch(setSearchResults(libProjectsEventData))
   

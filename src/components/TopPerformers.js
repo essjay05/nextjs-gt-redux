@@ -4,9 +4,6 @@ import styles from "./Search.module.scss"
 
 const TopPerformers = ({ performers }) => {
 
-  // console.log('TopPerformers performers prop:')
-  // console.log(performers)
-
   return (
     <div className={styles.collectionListContainer}>
       { performers.map((performerItem) => {

@@ -5,9 +5,6 @@ import styles from "./Search.module.scss"
 
 const TopEvents = ({ events }) => {
 
-  // console.log('TopEvents events prop:')
-  // console.log(events)
-
   return (
     <div className={styles.collectionListContainer}>
       { events.map((eventItem, index) => {

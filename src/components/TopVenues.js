@@ -4,9 +4,6 @@ import styles from "./Search.module.scss"
 
 const TopVenues = ({ venues }) => {
 
-  // console.log('TopVenues venues prop:')
-  // console.log(venues)
-
   return (
     <div className={styles.collectionListContainer}>
       { venues.map((venueItem) => {

@@ -14,9 +14,10 @@ export default function TextInput ({
 
   const [inputValue, setInputValue] = useState("")
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value)
-  }
+  // WIP: Trying to convert to using global TextInput that was created. 
+  // const handleInputChange = (event) => {
+  //   setInputValue(event.target.value)
+  // }
     
   return (
     <div className={styles.textInputWrapper}>

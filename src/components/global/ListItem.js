@@ -5,6 +5,7 @@ import styles from "./ListItem.module.scss"
 const ListItem = ({ id, title, subtitle, imgSrc }) => {
   
   const placeholderImg = 'https://cdn.kustomerhostedcontent.com/media/5ff34d4f2e2de5e58056fa86/fc315c161af1e6ef3a345fdf0f687bd9.svg'
+  // WIP: need to figure out what to do with broken images
   // const handleImgError = e => {
   //   e.target.src = placeholderImg
   // }
