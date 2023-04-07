@@ -21,14 +21,13 @@ export default function Home({ resultsData }) {
       <main>
         <Preloader searchResults={resultsData}/>
         <Providers>
-          <h1 className={`${utilStyles.heading2Xl}`}>{siteTitle}</h1>
           <Image
             priority
             src="/Gametime_logo.svg"
-            width={1000}
+            width={800}
             height={50}
             alt="Gametime Logo"
-            classname={styles.mainLogo}/>
+            className={styles.mainLogo}/>
           <Search />
         </Providers>
       </main>
